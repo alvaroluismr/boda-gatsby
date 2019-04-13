@@ -1,17 +1,14 @@
 import React from "react"
-import Layout from "../components/layout"
-import Countdown from "../components/countdown"
-import pareja from "../img/pareja.jpeg"
 
+export default () => {
 
-/*
     var end = new Date('8/8/2019 6:00 PM');
 
     var _second = 1000;
     var _minute = _second * 60;
     var _hour = _minute * 60;
     var _day = _hour * 24;
-    var texto = "";
+    var texto = "algo";
     var timer;
 
     function showRemaining() {
@@ -35,20 +32,17 @@ import pareja from "../img/pareja.jpeg"
         document.getElementById('countdown').innerHTML = texto; 
     }
     timer = setInterval(showRemaining, 1000);
-    */
-
-export default () => {
 
     return (
-    <Layout>
-        <div style={{ margin: '3rem auto', maxWidth: 650, padding: '0 1rem' }}>
-            
-            <Countdown />
-
-            <figure>
-                <img src={pareja} alt="Jon y María" />
-            </figure>
+        <div id="countdown"
+            style={{
+                textAlign: 'center',
+                fontSize: '2rem',
+                color: 'red',
+                marginBottom: '0.5rem',
+                textShadow: '1px 1px 3px darkred'
+            }}
+        >
         </div>
-    </Layout>
     )
 }

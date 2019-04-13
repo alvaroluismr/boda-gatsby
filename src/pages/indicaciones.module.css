@@ -44,6 +44,14 @@
     margin-bottom: 10px;
 }
 
+.links{
+    /*font-family: ;*/
+    text-shadow: none;
+    background-image: none;
+    color: darkred;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 600px) {
     .colum{
         flex: 100%;
