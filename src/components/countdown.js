@@ -1,13 +1,72 @@
 import React from "react"
 
+var end = new Date('8/8/2019 6:00 PM');
+var second = 1000;
+var minute = second * 60;
+var hour = minute * 60;
+var day = hour * 24;
+
+class CountDown extends React.Component {
+    constructor (props) {
+        super (props);
+        this.state = {
+            /*_end: new Date('8/8/2019 6:00 PM'),
+            _second: 1000,
+            _minute: this.state._second * 60,
+            _hour: this.state._minute * 60,
+            _day: this.state._hour * 24,*/
+            _texto: "",
+            _timer: null,
+        };
+    }
+
+    showRemaining = () => {
+        var now = new Date();
+        var distance = end - now;
+        var texto = "";
+        if (distance < 0){
+            clearInterval(this.state._timer);
+            //document.getElementById('countdown').innerHTML = 'VIVAN LOS NOVIOS!';
+            this.setState({_texto: 'VIVAN LOS NOVIOS'});
+            return;
+        }
+        var days = Math.floor(distance / day);
+        var hours = Math.floor((distance % day) / hour);
+        var minutes = Math.floor((distance % hour) / minute);
+        var seconds = Math.floor((distance % minute) / second);
+
+        texto = days + ' dias, ';
+        texto += hours + ' horas, ';
+        texto += minutes + ' minutos y ';
+        texto += seconds + ' segundos';
+        //document.getElementById('countdown').innerHTML = texto;
+        this.setState({
+            _texto: texto
+        });
+    }
+
+    componentDidMount(){
+        this.setState({_timer: setInterval(this.showRemaining, 1000)});
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.state._timer);
+    }
+
+    render() {
+        return (this.state._texto)
+    }
+
+}
+
 export default () => {
 
-    var end = new Date('8/8/2019 6:00 PM');
+    /*var end = new Date('8/8/2019 6:00 PM');
 
-    var _second = 1000;
-    var _minute = _second * 60;
-    var _hour = _minute * 60;
-    var _day = _hour * 24;
+    var second = 1000;
+    var minute = second * 60;
+    var hour = minute * 60;
+    var day = hour * 24;
     var texto = "algo";
     var timer;
 
@@ -31,7 +90,7 @@ export default () => {
         texto += seconds + ' segundos';
         document.getElementById('countdown').innerHTML = texto; 
     }
-    timer = setInterval(showRemaining, 1000);
+    timer = setInterval(showRemaining, 1000);*/
 
     return (
         <div id="countdown"
@@ -43,6 +102,7 @@ export default () => {
                 textShadow: '1px 1px 3px darkred'
             }}
         >
+            <CountDown />
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
-import caleta from "../img/caleta.jpg"
+//import caleta from "../img/caleta.jpg"
+import Video from "../components/video"
 
 export default () => (
     <Layout>
@@ -21,9 +22,13 @@ export default () => (
             </div>
         </div>
         <div style={{ margin: '3rem auto', maxWidth: 650, padding: '0 1rem', textAlign: 'center' }}>
-            <figure style={{ marginTop: '1rem' }}>
+            {/*<figure style={{ marginTop: '1rem' }}>
                 <img src={caleta} alt="Playa de la caleta" />
-            </figure>
+            </figure>*/}
+            <Video
+                videoSrcURL="https://www.youtube.com/embed/s6WV7vBDF84?rel=0&amp;showinfo=0"
+                videoTitle="Vídeo presentación"
+            />
         </div>
     </Layout>
 )
