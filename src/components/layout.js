@@ -13,8 +13,7 @@ export default ({ children }) => (
     <div className={layoutStyle.todo}>
         <header className={layoutStyle.cabecera}>
             <Link to="/" className={layoutStyle.titulohead}>
-                <h1 style={{ display: 'inline' }}>LA BODA DEL AÑO</h1>
-                <h1>JON Y MARÍA</h1>
+                <h1 style={{ display: 'inline' }}>Todos necesitamos un poco de sur para no perder el norte</h1>
             </Link>
             <figure className={layoutStyle.anillos}>
                 <img src={anillos} alt="Anillos" />

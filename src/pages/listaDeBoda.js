@@ -1,11 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import hobbiton from "../img/hobbiton2.jpg"
+import ListaBodaStyle from "./cuerpo.module.css"
 
 export default () => (
     <Layout>
-        <div style={{ backgroundColor: '#F7F7F7', border: '5px 0px solid white'}}>
-            <div style={{ margin: '3rem auto', maxWidth: 650, padding: '0 1rem', textAlign: 'center' }}>
+        <div className={ ListaBodaStyle.contenedortexto }>
+            <div className={ ListaBodaStyle.texto }>
                 <p>
                     El regalo es opcional, la asistencia obligatoria.
                 </p>

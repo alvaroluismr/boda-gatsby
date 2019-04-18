@@ -2,11 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 //import caleta from "../img/caleta.jpg"
 import Video from "../components/video"
+import PresentStyle from "./cuerpo.module.css"
 
 export default () => (
     <Layout>
-        <div style={{ backgroundColor: '#F7F7F7', border: '5px 0px solid white'}}>
-            <div style={{ margin: '3rem auto', maxWidth: 650, padding: '0 1rem', textAlign: 'center' }}>
+        <div className={ PresentStyle.contenedortexto }>
+            <div className={ PresentStyle.texto}>
                 <h1>¡¡PONEROS GUAPOS QUE NOS VAMOS DE BODA!!</h1>
                 <p>Y lo tenemos todo...</p>
                 <p>Los trajes, el coche, el fotógrafo, el sitio, las flores...</p>
