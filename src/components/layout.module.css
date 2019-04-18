@@ -59,23 +59,73 @@
     float: right;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     .menu{
-        flex-direction: column;
+        /*flex-direction: column;*/
     }
     .titulohead {
         font-size: 1.5rem;
+    }
+    .links{
+        font-size: 1.5rem;
+        margin-right: 0.75rem;
+        margin-left: 0.25rem;
+    }
+    .cabecera{
+        height: 7rem;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .menu{
+        min-height: 3rem;
+    }
+    .links{
+        font-size: 1.25rem;
+    }
+    .cabecera{
+        height: 6rem;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .menu{
+        min-height: 3rem;
+    }
+    .links{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .menu{
+        min-height: 2.5rem;
+    }
+    .cabecera{
+        padding: 1rem 1.5rem 0rem 1.5rem;
+        height: 5rem;
+    }
+    .titulohead{
+        font-size: 1rem;
+    }
+    .links{
+        font-size: 0.75rem;
     }
 }
 
 @media (max-width: 360px) {
     .menu{
-        flex-direction: column;
+        /*flex-direction: column;*/
+        min-height: 2rem;
     }
     .titulohead {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .links{
-        font-size: 1.5rem;
+        font-size: 0.6rem;
+    }
+    .cabecera{
+        height: 4rem;
+        padding: 0.8rem 1rem 0rem 1rem;
     }
 }
