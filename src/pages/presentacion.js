@@ -18,7 +18,7 @@ export default () => (
                     La ceremonia tendrá lugar el día <b>3 de Agosto de 2019</b> a las <b>18:00</b> en la Iglesia de San Francisco
                     (Cádiz), y después seguiremos celebrándolo en la Finca Alboreá (El Colorado).
                 </p>
-                <p>Así que, para que cerremos la lista de LO TENEMOS TODO, confímanos lo que ya sabemos:</p>
+                <p>Así que, para que cerremos la lista de LO TENEMOS TODO, confírmanos lo que ya sabemos:</p>
                 <h1>¡¡QUE VIENES!!</h1>
             </div>
         </div>
