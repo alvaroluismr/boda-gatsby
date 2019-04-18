@@ -23,7 +23,8 @@ export default ({ children }) => (
             {/*<ul className={layoutStyle.listmenu}>*/}
                 <ListLink to="/">Inicio</ListLink>
                 <ListLink to="/presentacion/">Presentación</ListLink>
-                <ListLink to="/indicaciones/">Indicaciones</ListLink>                    <ListLink to="/confirmacion/">Confirmación</ListLink>
+                <ListLink to="/indicaciones/">Indicaciones</ListLink>                    
+                <ListLink to="/confirmacion/">Confirmación</ListLink>
                 <ListLink to="/listaDeBoda/">Lista de Boda</ListLink>
             {/*</ul>*/}
         </nav>

@@ -35,10 +35,10 @@ class CountDown extends React.Component {
         var minutes = Math.floor((distance % hour) / minute);
         var seconds = Math.floor((distance % minute) / second);
 
-        texto = days + ' dias, ';
-        texto += hours + ' horas, ';
-        texto += minutes + ' minutos y ';
-        texto += seconds + ' segundos';
+        texto = days + ' d, ';
+        texto += hours + ' h, ';
+        texto += minutes + ' m, ';
+        texto += seconds + ' s';
         //document.getElementById('countdown').innerHTML = texto;
         this.setState({
             _texto: texto
@@ -97,9 +97,9 @@ export default () => {
             style={{
                 textAlign: 'center',
                 fontSize: '2rem',
-                color: 'red',
+                color: 'black',
                 marginBottom: '0.5rem',
-                textShadow: '1px 1px 3px darkred'
+                textShadow: '2px 2px 3px gray'
             }}
         >
             <CountDown />
