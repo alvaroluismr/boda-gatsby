@@ -12,9 +12,9 @@ const ListLink = props => (
 export default ({ children }) => (
     <div className={layoutStyle.todo}>
         <header className={layoutStyle.cabecera}>
-            <Link to="/" className={layoutStyle.titulohead}>
-                <h1 style={{ display: 'inline' }}>Todos necesitamos un poco de sur para no perder el norte</h1>
-            </Link>
+            <div className={layoutStyle.titulohead}>
+                <h1>Todos necesitamos un poco de sur para no perder el norte</h1>
+            </div>
             <figure className={layoutStyle.anillos}>
                 <img src={anillos} alt="Anillos" />
             </figure>
