@@ -26,7 +26,7 @@ class Confirmaform extends React.Component {
     render() {
         return (
             <div style={{ backgroundColor: '#F7F7F7' }}>
-                <form /*onSubmit={this.handleSubmit}*/ name="confirmacion" method="POST" data-netlify="true" >
+                <form /*onSubmit={this.handleSubmit}*/ name="confirmacion" method="POST" netlify >
                     <label>
                         Nombre:
                         <input type="text" name="nombre" value={this.state.nombre} onChange={this.handleInputChange} />
