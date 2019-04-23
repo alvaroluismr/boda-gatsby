@@ -5,7 +5,7 @@ import Confirmaform from "../components/confirmaform"
 export default () => (
     <Layout>
         <div style={{ margin: '3rem auto', maxWidth: 650, padding: '0 1rem' }}>
-            <h1>Formulario de confirmación</h1>
+            {/*<h1>Formulario de confirmación</h1>*/}
             <Confirmaform />
         </div>
     </Layout>

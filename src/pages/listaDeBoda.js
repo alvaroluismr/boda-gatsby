@@ -14,7 +14,7 @@ export default () => (
                     Pero si quieres tener un detalle con nosotros, que mejor regalo que nuestra luna de miel
                 </p>
                 <p>
-                    <spam className={ListaBodaStyle.cuenta} >Nº de cuenta : ES24 3035 0260 00 2621041541</spam>
+                    <spam className={ListaBodaStyle.cuenta} >Nº de cuenta : ES24 3035 0262 00 2621041541</spam>
                 </p>
             </div>
         </div>
