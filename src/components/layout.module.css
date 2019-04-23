@@ -72,7 +72,7 @@
     float: right;
 }
 
-footer{
+.pie{
     background-color: gray;
     border-top: 2px solid white;
     display: flex;
@@ -126,7 +126,7 @@ footer{
     .links{
         font-size: 1rem;
     }
-    footer{
+    .pie{
         font-size: 0.6rem;
     }
 }
@@ -172,7 +172,7 @@ footer{
         height: 4rem;
         padding: 0.8rem 1rem 0rem 1rem;
     }
-    footer{
+    .pie{
         font-size: 0.5rem;
     }
 }

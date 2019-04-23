@@ -31,7 +31,7 @@ export default ({ children }) => (
         <div className={layoutStyle.contenido}>
         {children}
         </div>
-        <footer>
+        <footer className={layoutStyle.pie}>
             <div className={layoutStyle.contacto}>
                 <p>Información de contacto:</p>
                 <p>María - 678 357 767</p>
