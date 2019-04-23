@@ -28,6 +28,19 @@ export default ({ children }) => (
                 <ListLink to="/listaDeBoda/">Lista de Boda</ListLink>
             {/*</ul>*/}
         </nav>
+        <div className={layoutStyle.contenido}>
         {children}
+        </div>
+        <footer>
+            <div className={layoutStyle.contacto}>
+                <p>Información de contacto:</p>
+                <p>María - 678 357 767</p>
+                <p>Jon - 625 652 571</p>
+            </div>
+            <div className={layoutStyle.autor}>
+                <p>Autor:</p>
+                <p>Alvaro Luis Martínez Romero (alvaroluismr@gmail.com)</p>
+            </div>
+        </footer>
     </div>
 )
