@@ -23,6 +23,7 @@
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
     min-height: 5rem;
+    box-shadow: 0 0.5rem 0.25rem gray;
 }
 
 .listmenu{
