@@ -1,6 +1,6 @@
 import React from "react"
 
-var end = new Date('8/8/2019 6:00 PM');
+var end = new Date('8/3/2019 6:00 PM');
 var second = 1000;
 var minute = second * 60;
 var hour = minute * 60;
